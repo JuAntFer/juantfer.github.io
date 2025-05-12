@@ -7,74 +7,85 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary-color: #0A2342;
-      --secondary-color: #333;
+      --primary-color: #0a2342;
+      --secondary-color: #1c2e4a;
+      --accent-color: #0077b6;
       --background-color: #ffffff;
-      --accent-gray: #eaeaea;
-      --text-muted: #555;
+      --card-background: #f8f9fa;
+      --text-muted: #666;
+      --border-color: #dce3ed;
     }
 
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
       font-family: 'Inter', sans-serif;
     }
 
     body {
       background-color: var(--background-color);
       color: var(--secondary-color);
-      line-height: 1.6;
-      padding: 2rem;
+      padding: 2rem 1rem;
+      max-width: 960px;
+      margin: auto;
     }
 
-    h1, h2 {
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
       color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    h2.section-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--border-color);
+      margin-bottom: 1rem;
+      padding-bottom: 0.3rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--secondary-color);
     }
 
     .section {
-      margin-bottom: 2.5rem;
+      margin-bottom: 3rem;
     }
 
-    .section-title {
-      font-size: 1.6rem;
-      font-weight: 800;
-      border-bottom: 2px solid var(--primary-color);
-      padding-bottom: 0.3rem;
+    .card {
+      background-color: var(--card-background);
+      padding: 1rem 1.2rem;
+      border-radius: 8px;
       margin-bottom: 1rem;
-    }
-
-    .item {
-      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      border-left: 4px solid var(--primary-color);
     }
 
     .item-title {
       font-weight: 600;
       color: var(--primary-color);
+      margin-bottom: 0.3rem;
     }
 
     .item-subtitle {
       font-style: italic;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: var(--text-muted);
+      margin-bottom: 0.4rem;
     }
 
-    .timeline-item {
-      margin-bottom: 1.5rem;
-    }
-
-    .item-date {
+    .timeline-item .item-date {
       font-weight: 600;
-      color: var(--primary-color);
-    }
-
-    .item-content {
-      margin-top: 0.3rem;
-      color: var(--secondary-color);
+      color: var(--accent-color);
+      margin-bottom: 0.2rem;
     }
 
     a {
-      color: var(--primary-color);
+      color: var(--accent-color);
       text-decoration: none;
     }
 
@@ -83,23 +94,22 @@
     }
 
     footer {
-      border-top: 1px solid var(--accent-gray);
-      margin-top: 3rem;
-      padding-top: 1rem;
+      text-align: center;
       font-size: 0.85rem;
       color: var(--text-muted);
-      text-align: center;
+      border-top: 1px solid var(--border-color);
+      margin-top: 3rem;
+      padding-top: 1rem;
     }
 
     .contact-links {
       display: flex;
-      gap: 1rem;
       flex-wrap: wrap;
-      margin-top: 1rem;
+      gap: 1rem;
+      margin-top: 0.5rem;
     }
 
     .contact-links a {
-      color: var(--primary-color);
       font-weight: 600;
     }
   </style>
@@ -110,9 +120,9 @@
   <div class="section">
     <h2 class="section-title">About Me</h2>
     <p>
-      I specialize in designing efficient deep learning models for deployment on embedded systems and resource-constrained environments.
-      My work focuses on model compression, including quantization, pruning, and structural reparameterization, to enable real-world AI applications
-      in areas like autonomous driving, healthcare, and smart devices.
+      I specialize in designing efficient deep learning models for embedded and resource-constrained systems.
+      My work focuses on model compression—quantization, pruning, and structural reparameterization—for real-world AI applications
+      in autonomous driving, healthcare, and smart devices.
     </p>
     <p>
       I hold a dual Master’s degree in Electrical Engineering and Information Technology from <strong>TUM</strong> (Germany) and <strong>ENSEA</strong> (France),
@@ -123,49 +133,48 @@
   <div class="section">
     <h2 class="section-title">Research</h2>
 
-    <div class="item">
+    <div class="card">
       <div class="item-subtitle">April 2025</div>
-      <div class="item-title"> Our paper <strong>“RepFC: Universal Structural Reparameterization Block for High-Performance, Lightweight Deep Neural Networks”</strong> has been accepted to CVPR 2025 Mobile AI Workshop</div>
+      <div class="item-title">Paper Accepted at CVPR 2025 Mobile AI Workshop</div>
+      <p><strong>“RepFC: Universal Structural Reparameterization Block for High-Performance, Lightweight Deep Neural Networks”</strong></p>
     </div>
 
-    <div class="item">
+    <div class="card">
       <div class="item-subtitle">November 2024</div>
-      <div class="item-title"> I defended my Master’s Thesis</div>
-      <p>
-        Thesis Topic : <strong>“Accelerating Inference on Edge Devices through Hardware-Aware Structural Re-Parameterization of DNNs.”</strong>
-      </p>
+      <div class="item-title">Master’s Thesis Defense</div>
+      <p><strong>“Accelerating Inference on Edge Devices through Hardware-Aware Structural Re-Parameterization of DNNs.”</strong></p>
     </div>
 
-    <div class="item">
+    <div class="card">
       <div class="item-subtitle">June 2023</div>
-      <div class="item-title"> I presented the paper <a href="https://arxiv.org/abs/2204.02311" target="_blank">PaLM: Scaling Language Modeling with Pathways</a>
-        by Aakanksha Chowdhery et al. during a Machine Learning Seminar.
+      <div class="item-title">Paper Presentation: <a href="https://arxiv.org/abs/2204.02311" target="_blank">"PaLM: Scaling Language Modeling with Pathways"</a></div> published by Chowdhery & al. in 2022;
+      <p>Presented during a Machine Learning Seminar.</p>
     </div>
   </div>
 
   <div class="section">
     <h2 class="section-title">Education</h2>
 
-    <div class="timeline-item">
+    <div class="card timeline-item">
       <div class="item-date">2024</div>
       <div class="item-content">
-        Master’s Degree in Electrical Engineering & Information Technology<br>
+        Master’s Degree in Electrical Engineering & Information Technology<br />
         <em>Technische Universität München (TUM), Germany</em>
       </div>
     </div>
 
-    <div class="timeline-item">
+    <div class="card timeline-item">
       <div class="item-date">Fall 2023</div>
       <div class="item-content">
-        Exchange Semester in AI & Robotics<br>
+        Exchange Semester in AI & Robotics<br />
         <em>Korea Advanced Institute of Science & Technology (KAIST), South Korea</em>
       </div>
     </div>
 
-    <div class="timeline-item">
+    <div class="card timeline-item">
       <div class="item-date">2023</div>
       <div class="item-content">
-        Engineering Degree in Electrical & Computer Engineering<br>
+        Engineering Degree in Electrical & Computer Engineering<br />
         <em>École Nationale Supérieure de l'Électronique et de ses Applications (ENSEA), France</em>
       </div>
     </div>
@@ -174,38 +183,38 @@
   <div class="section">
     <h2 class="section-title">Professional Experience</h2>
 
-    <div class="item">
-      <div class="item-subtitle"> April 2023 – November 2024</div>
-      <div class="item-title">Computer Vision Research Intern at BMW Group, Munich</div>
+    <div class="card">
+      <div class="item-subtitle">Apr 2023 – Nov 2024</div>
+      <div class="item-title">Computer Vision Research Intern, BMW Group, Munich</div>
     </div>
 
-    <div class="item">
-      <div class="item-subtitle"> December 2024 – March 2025</div>
-      <div class="item-title">Master’s Thesis in Deep Learning at BMW Group, Munich</div>
+    <div class="card">
+      <div class="item-subtitle">Dec 2024 – Mar 2025</div>
+      <div class="item-title">Master’s Thesis in Deep Learning, BMW Group, Munich</div>
     </div>
 
-    <div class="item">
-      <div class="item-subtitle"> May 2022 – July 2022</div>
-      <div class="item-title">System Engineering Intern at Weeroc, Paris</div>
+    <div class="card">
+      <div class="item-subtitle">May 2022 – Jul 2022</div>
+      <div class="item-title">System Engineering Intern, Weeroc, Paris</div>
     </div>
 
-    <div class="item">
-      <div class="item-subtitle"> June 2021 – August 2021</div>
-      <div class="item-title">FPGA Engineering Intern at Framatome, Paris</div>
+    <div class="card">
+      <div class="item-subtitle">Jun 2021 – Aug 2021</div>
+      <div class="item-title">FPGA Engineering Intern, Framatome, Paris</div>
     </div>
   </div>
 
   <div class="section">
     <h2 class="section-title">Engagements</h2>
 
-    <div class="item">
-      <div class="item-subtitle"> AMarch 2023 – April 2025 </div>
-      <div class="item-title"> Tutor at TUMi ESN</div>
+    <div class="card">
+      <div class="item-subtitle">Mar 2023 – Apr 2025</div>
+      <div class="item-title">Tutor, TUMi ESN</div>
     </div>
 
-    <div class="item">
-      <div class="item-subtitle"> December 2020 – May 2022 </div>
-      <div class="item-title">Project Manager at Junior ENSEA</div>
+    <div class="card">
+      <div class="item-subtitle">Dec 2020 – May 2022</div>
+      <div class="item-title">Project Manager, Junior ENSEA</div>
     </div>
   </div>
 
@@ -220,8 +229,9 @@
   </div>
 
   <footer>
-    &copy; 2025 – Anthony Fernando Judeson. Built with love for GitHub Pages.
+    &copy; 2025 – Anthony Fernando Judeson.
   </footer>
 </body>
 </html>
+
 
