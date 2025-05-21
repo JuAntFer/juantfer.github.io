@@ -5,250 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anthony Fernando Judeson | Electrical & Computer Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary-color: #0a2342;
-      --secondary-color: #1c2e4a;
-      --accent-color: #0077b6;
-      --background-color: #ffffff;
-      --card-background: #f8f9fa;
-      --text-muted: #666;
-      --border-color: #dce3ed;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      background-color: var(--background-color);
-      color: var(--secondary-color);
-      padding: 2rem 1rem;
-      max-width: 960px;
-      margin: auto;
-    }
-
-    h1 {
-      font-size: 2rem;
-      font-weight: 800;
-      color: var(--primary-color);
-      margin-bottom: 0.5rem;
-    }
-
-    h2.section-title {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: var(--primary-color);
-      border-bottom: 2px solid var(--border-color);
-      margin-bottom: 1rem;
-      padding-bottom: 0.3rem;
-    }
-
-    p {
-      margin-bottom: 1rem;
-      color: var(--secondary-color);
-    }
-
-    .section {
-      margin-bottom: 3rem;
-    }
-
-    .card {
-      background-color: var(--card-background);
-      padding: 1rem 1.2rem;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      border-left: 4px solid var(--primary-color);
-    }
-
-    .item-title {
-      font-weight: 600;
-      color: var(--primary-color);
-      margin-bottom: 0.3rem;
-    }
-
-    .item-subtitle {
-      font-style: italic;
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      margin-bottom: 0.4rem;
-    }
-
-    .timeline-item .item-date {
-      font-weight: 600;
-      color: var(--accent-color);
-      margin-bottom: 0.2rem;
-    }
-
-    a {
-      color: var(--accent-color);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      border-top: 1px solid var(--border-color);
-      margin-top: 3rem;
-      padding-top: 1rem;
-    }
-
-    .contact-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 0.5rem;
-    }
-
-    .contact-links a {
-      font-weight: 600;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Anthony Fernando Judeson</h1>
+  <header class="header">
+    <h1>Anthony Fernando Judeson</h1>
+  </header>
 
-<div class="section" style="width: 100%; padding: 20px; box-sizing: border-box;">
-  <h2 class="section-title">Research Interests</h2>
-  
-  <p>
-    I am particularly driven by the challenge of designing and optimizing deep neural networks that are both high-performing and computationally efficient for deployment in real-world scenarios. 
-    As models become increasingly complex to achieve state-of-the-art results, the need to balance accuracy with resource constraints becomes critical—especially for embedded systems and edge devices.
-  </p>
+  <main>
+    <section class="section">
+      <h2 class="section-title">Research Interests</h2>
+      <p>I am particularly driven by the challenge of designing and optimizing deep neural networks that are both high-performing and computationally efficient for deployment in real-world scenarios...</p>
+      <p>My interest lies in applying compression techniques such as quantization, pruning, and structural reparameterization...</p>
+      <p>I hold a dual Master’s degree in Electrical Engineering and Information Technology from <strong>TUM</strong> (Germany) and <strong>ENSEA</strong> (France)...</p>
+    </section>
 
-  <p>
-    My interest lies in applying compression techniques such as quantization, pruning, and structural reparameterization by analyzing feature maps and latent spaces, 
-    in order to streamline inference without compromising performance, while also improving other key metrics such as accuracy.
-    In this context, I am also deeply interested in the challenge of improving network robustness—particularly in developing models that are resilient to adversarial attacks and capable of learning from new data without forgetting previously acquired knowledge, 
-    all while avoiding access to the original training dataset. These issues are especially pressing in scenarios where data privacy, storage capacity, and computational resources are limited.
-  </p>
-
-  <p>
-    I hold a dual Master’s degree in Electrical Engineering and Information Technology from <strong>TUM</strong> (Germany) and <strong>ENSEA</strong> (France), 
-    with an exchange semester at <strong>KAIST</strong> (South Korea), where I focused on AI and robotics.
-  </p>
-</div>
-
-
-  <div class="section">
-    <h2 class="section-title">Research</h2>
-
-    <div class="card">
-      <div class="item-subtitle">April 2025</div>
-      <div class="item-title">Paper Accepted at CVPR 2025 Mobile AI Workshop</div>
-      <p><strong>“RepFC: Universal Structural Reparameterization Block for High-Performance, Lightweight Deep Neural Networks”</strong></p>
-      <p>Co-authored with Shambhavi B.Sampath & BMW Autonomous Driving Research Team</p>
-    </div>
-
-    <div class="card">
-      <div class="item-subtitle">November 2024</div>
-      <div class="item-title">Master’s Thesis Defense</div>
-      <p>Topic: <strong>“Accelerating Inference on Edge Devices through Hardware-Aware Structural Re-Parameterization of DNNs”</strong></p>
-    </div>
-
-    <div class="card">
-      <div class="item-subtitle">June 2023</div>
-      <div class="item-title">Research Paper Presentation: <a href="https://arxiv.org/abs/2204.02311" target="_blank">"PaLM: Scaling Language Modeling with Pathways",</a></div>
-      <p>published by Chowdhery & al., Journal of Machine Learning Research, 2023 <p>
-      <p>Presented during a Machine Learning Seminar</p>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">Education</h2>
-
-    <div class="card timeline-item">
-      <div class="item-subtitle">2024</div>
-      <div class="item-title">
-        Master’s Degree in Electrical Engineering & Information Technology<br />
+    <section class="section">
+      <h2 class="section-title">Research</h2>
+      <div class="card">
+        <div class="item-subtitle">April 2025</div>
+        <div class="item-title">Paper Accepted at CVPR 2025 Mobile AI Workshop</div>
+        <p><strong>“RepFC: Universal Structural Reparameterization Block for High-Performance, Lightweight Deep Neural Networks”</strong></p>
+        <p>Co-authored with Shambhavi B.Sampath & BMW Autonomous Driving Research Team</p>
       </div>
-      <div class="item-content">
-        <em>Technische Universität München (TUM), Germany</em>
+      <div class="card">
+        <div class="item-subtitle">November 2024</div>
+        <div class="item-title">Master’s Thesis Defense</div>
+        <p>Topic: <strong>“Accelerating Inference on Edge Devices through Hardware-Aware Structural Re-Parameterization of DNNs”</strong></p>
       </div>
-    </div>
-
-    <div class="card timeline-item">
-      <div class="item-subtitle">Fall 2023</div>
-      <div class="item-title">
-        Exchange Semester in AI & Robotics<br />
+      <div class="card">
+        <div class="item-subtitle">June 2023</div>
+        <div class="item-title">Research Paper Presentation: <a href="https://arxiv.org/abs/2204.02311" target="_blank">"PaLM: Scaling Language Modeling with Pathways"</a></div>
+        <p>Published by Chowdhery & al., Journal of Machine Learning Research, 2023</p>
+        <p>Presented during a Machine Learning Seminar</p>
       </div>
-      <div class="item-content">
-         <em>Korea Advanced Institute of Science & Technology (KAIST), South Korea</em>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="card timeline-item">
+        <div class="item-subtitle">2024</div>
+        <div class="item-title">Master’s Degree in Electrical Engineering & Information Technology</div>
+        <div class="item-content"><em>Technische Universität München (TUM), Germany</em></div>
       </div>
-    </div>
-
-    <div class="card timeline-item">
-      <div class="item-subtitle">2023</div>
-      <div class="item-title">
-        Engineering Degree in Electrical & Computer Engineering<br />
+      <div class="card timeline-item">
+        <div class="item-subtitle">Fall 2023</div>
+        <div class="item-title">Exchange Semester in AI & Robotics</div>
+        <div class="item-content"><em>Korea Advanced Institute of Science & Technology (KAIST), South Korea</em></div>
       </div>
-      <div class="item-content">
-        <em>École Nationale Supérieure de l'Électronique et de ses Applications (ENSEA), France</em>
+      <div class="card timeline-item">
+        <div class="item-subtitle">2023</div>
+        <div class="item-title">Engineering Degree in Electrical & Computer Engineering</div>
+        <div class="item-content"><em>École Nationale Supérieure de l'Électronique et de ses Applications (ENSEA), France</em></div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="section">
-    <h2 class="section-title">Professional Experience</h2>
+    <section class="section">
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="card"><div class="item-subtitle">Apr 2023 – Nov 2024</div><div class="item-title">Computer Vision Research Intern, BMW Group, Munich</div></div>
+      <div class="card"><div class="item-subtitle">Dec 2024 – Mar 2025</div><div class="item-title">Master’s Thesis in Deep Learning, BMW Group, Munich</div></div>
+      <div class="card"><div class="item-subtitle">May 2022 – Jul 2022</div><div class="item-title">System Engineering Intern, Weeroc, Paris</div></div>
+      <div class="card"><div class="item-subtitle">Jun 2021 – Aug 2021</div><div class="item-title">FPGA Engineering Intern, Framatome, Paris</div></div>
+    </section>
 
-    <div class="card">
-      <div class="item-subtitle">Apr 2023 – Nov 2024</div>
-      <div class="item-title">Computer Vision Research Intern, BMW Group, Munich</div>
-    </div>
+    <section class="section">
+      <h2 class="section-title">Engagements</h2>
+      <div class="card"><div class="item-subtitle">Mar 2023 – Apr 2025</div><div class="item-title">Tutor, TUMi ESN</div></div>
+      <div class="card"><div class="item-subtitle">Dec 2020 – May 2022</div><div class="item-title">Project Manager, Junior ENSEA</div></div>
+    </section>
 
-    <div class="card">
-      <div class="item-subtitle">Dec 2024 – Mar 2025</div>
-      <div class="item-title">Master’s Thesis in Deep Learning, BMW Group, Munich</div>
-    </div>
-
-    <div class="card">
-      <div class="item-subtitle">May 2022 – Jul 2022</div>
-      <div class="item-title">System Engineering Intern, Weeroc, Paris</div>
-    </div>
-
-    <div class="card">
-      <div class="item-subtitle">Jun 2021 – Aug 2021</div>
-      <div class="item-title">FPGA Engineering Intern, Framatome, Paris</div>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">Engagements</h2>
-
-    <div class="card">
-      <div class="item-subtitle">Mar 2023 – Apr 2025</div>
-      <div class="item-title">Tutor, TUMi ESN</div>
-    </div>
-
-    <div class="card">
-      <div class="item-subtitle">Dec 2020 – May 2022</div>
-      <div class="item-title">Project Manager, Junior ENSEA</div>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">Contact</h2>
-    <p>Feel free to connect with me:</p>
-    <div class="contact-links">
-      <a href="https://github.com/JuAntFer" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/judeson-anthony-fernando/" target="_blank">LinkedIn</a>
-      <a href="mailto:judeson.anthony@gmail.com">anthofernajudeson@gmail.com</a>
-    </div>
-  </div>
+    <section class="section" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p>Interested in working together or learning more? Feel free to reach out!</p>
+      <div class="contact-links">
+        <a href="mailto:judeson.anthony@gmail.com">judeson.anthony@gmail.com</a>
+        <a href="https://github.com/JuAntFer" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/judeson-anthony-fernando/" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+  </main>
 
   <footer>
     &copy; 2025 – Anthony Fernando Judeson. Last update: 05/2025
   </footer>
 </body>
 </html>
-
 
